@@ -1,0 +1,16 @@
+{
+  "name": "mysocial-backend",
+  "version": "1.0.0",
+  "description": "A social media rest api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon server.js"
+  },
+  "author": "Temitope Omosebi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}
