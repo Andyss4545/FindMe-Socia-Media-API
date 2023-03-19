@@ -1,0 +1,3 @@
+Packages to install
+
+mongoose, express, helmet, dotenv, morgan, nodemon etc.
