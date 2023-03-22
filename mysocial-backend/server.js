@@ -15,8 +15,9 @@ const PORT = process.env.PORT || 4002
 app.use(express.json()) // body parser as middleware
 app.use(helmet())
 app.use(morgan('common'))
-app.use('/api/users', require('./routes/users'))
 app.use('/api/auth', require('./routes/auth'))
+app.use('/api/users', require('./routes/users'))
+api.use('api/posts', require('./routes/posts'))
 
 app.listen(PORT,  () => {
        console.log(`Port started at PORT  ${PORT}`)
