@@ -4,12 +4,18 @@ const mongoose = require('mongoose')
 //Here we defined schema and the model for our user
 
 const userSchema = new mongoose.Schema({
+        //  userId: {
+        //     type: mongoose.Schema.Types.ObjectId,
+        //   //  required: true,
+        //     ref: "User"
+        // }, 
+
          username: {
-              type: String, // string character
-              required: true,
-              min: 3,    // minimum password character should be 3
-              max: 20,   // maximum password character should be 20
-              unique: true
+            type: String, // string character
+            required: true,
+            min: 3,    // minimum password character should be 3
+            max: 20,   // maximum password character should be 20
+            unique: true
          },
 
          email: {
