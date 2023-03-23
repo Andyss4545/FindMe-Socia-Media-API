@@ -17,7 +17,7 @@ app.use(helmet())
 app.use(morgan('common'))
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/users', require('./routes/users'))
-api.use('api/posts', require('./routes/posts'))
+app.use('/api/posts', require('./routes/posts'))
 
 app.listen(PORT,  () => {
        console.log(`Port started at PORT  ${PORT}`)
